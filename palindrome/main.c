@@ -20,10 +20,10 @@ int main(int argc, char *argv[]) {
     // to somehow start with a '\n'.
     line[strcspn(line, "\n")] = '\0';
 
-    char *result = palindrome(line);
-    printf("Is the string <%s> a palindrome? %s\n", line, result);
+    char *x = palindrome(line);
+    printf("Is the string <%s> a palindrome? %s\n", line, x);
     
-    free(result);  
+    free(x);  
   }
 
   free(line);  
